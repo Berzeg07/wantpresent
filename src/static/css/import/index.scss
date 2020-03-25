@@ -4,6 +4,7 @@
     height: 100%;
     margin: 0 auto;
     padding: 0 15px;
+    position: relative;
 }
 
 .bg-main {
@@ -15,14 +16,14 @@
     padding-top: 76px;
     text-align: center;
     margin-bottom: 120px;
-    @media(max-width: 1279px){
+    @media(max-width: 1279px) {
         width: 240px;
         margin-bottom: 60px;
         padding-top: 40px;
     }
 }
 
-.flex-block{
+.flex-block {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,13 +32,13 @@
 
 .nav-list {
     margin-bottom: 100px;
-    @media(max-width: 1599px){
+    @media(max-width: 1599px) {
         margin-bottom: 50px;
     }
 
     li {
         margin-bottom: 77px;
-        @media(max-width: 1599px){
+        @media(max-width: 1599px) {
             margin-bottom: 25px;
         }
     }
@@ -47,11 +48,12 @@
         position: relative;
         padding-left: 85px;
         transition: 0.5s;
-        @media(max-width: 1599px){
+        @media(max-width: 1599px) {
             font-size: 18px;
             padding-left: 40px;
         }
-        &:hover{
+
+        &:hover {
             opacity: 0.5;
         }
 
@@ -63,7 +65,7 @@
             transform: translateY(-50%);
             width: 50px;
             height: 50px;
-            @media(max-width: 1599px){
+            @media(max-width: 1599px) {
                 width: 30px;
                 height: 30px;
             }
@@ -101,7 +103,7 @@
     display: flex;
     justify-content: center;
     padding-bottom: 100px;
-    @media(max-width: 1599px){
+    @media(max-width: 1599px) {
         font-size: 30px;
     }
 
@@ -109,7 +111,8 @@
         display: inline-block;
         border-bottom: 1px solid white;
         line-height: 40px;
-        &:hover{
+
+        &:hover {
             border-bottom: 1px solid transparent;
         }
     }
@@ -118,5 +121,62 @@
         &:not(:last-child) {
             margin-right: 28px;
         }
+    }
+}
+
+.bg-contact {
+    height: 100%;
+    background: url("../img/bg-contact.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.contact-info {
+    text-align: center;
+    font-size: 34px;
+
+    p {
+        opacity: 0.8;
+    }
+
+    a {
+        display: inline-block;
+        border-bottom: 1px solid white;
+        line-height: 37px;
+    }
+}
+
+.block-top {
+    position: absolute;
+    padding: 54px 20px 30px 115px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255,255,255,0.1);
+    color: white;
+    font-size: 34px;
+    @media(max-width: 1279px) {
+        padding: 20px 20px 20px 100px;
+    }
+}
+
+.block-top__link {
+    position: absolute;
+    left: 30px;
+    top: 65px;
+    width: 40px;
+    height: 37px;
+    display: inline-block;
+    background: url("../img/arrow.png") no-repeat center;
+    @media(max-width: 1279px) {
+        top: 30px;
+    }
+}
+
+.main-logo_contact {
+    max-width: 310px;
+    margin: 0 auto;
+    padding: 120px 0 129px;
+    @media(min-width: 1280px){
+        padding: 200px 0 120px;
     }
 }

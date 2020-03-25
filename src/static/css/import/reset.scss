@@ -22,12 +22,16 @@ ul {
 }
 
 body {
-    min-height: 100vh;
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
     font-family: "Circe-Regular";
     color: white;
     font-size: 28px;
+}
+
+body,
+html {
+    height: 100%;
 }
 
 ol,

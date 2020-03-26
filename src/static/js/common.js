@@ -9,4 +9,7 @@ $(document).ready(function(){
             $('.modal-profile').fadeOut();
         });
     });
+    $('.sound-block__btn').click(function(){
+        $(this).toggleClass('off');
+    });
 });

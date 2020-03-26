@@ -3,7 +3,7 @@ module.exports = function() {
         $.bs.init({
             server: {
                 baseDir: "./build",
-                index: "user-profile-access.html"
+                index: "notisfications.html"
             }
         });
     });

@@ -523,6 +523,10 @@
         margin-bottom: 20px;
         background: rgba(255,255,255,0.2);
         padding: 30px;
+        min-height: 180px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         @media(max-width: 767px) {
             padding: 15px;
         }
@@ -1174,22 +1178,28 @@
     padding: 74px 46px;
     text-align: center;
     display: none;
-    @media(max-width: 767px){
+    @media(max-width: 767px) {
         padding: 25px 10px;
         max-width: 280px;
     }
-    p{
+
+    p {
         font-size: 30px;
-        @media(max-width: 767px){
+        @media(max-width: 767px) {
             font-size: 24px;
         }
     }
-    span{
+
+    span {
         font-size: 19px;
-        @media(max-width: 767px){
+        @media(max-width: 767px) {
             font-size: 14px;
         }
     }
+}
+
+.block-top__title_center {
+    text-align: center;
 }
 
 .modal-profile__btn-list {
@@ -1211,7 +1221,77 @@
     text-transform: uppercase;
 }
 
-.close-modal{
+.close-modal {
     text-transform: none;
     color: #979797;
+}
+
+.bg-notis {
+    background: url("../img/bg-notis.jpg") no-repeat center;
+    background-size: cover;
+
+    .block-top {
+        padding-left: 0;
+    }
+}
+
+.notis-list {
+    max-width: 1334px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 120px 15px 100px;
+}
+
+.user-list__date_time:after {
+    background: url("../img/time.png") no-repeat center;
+    background-size: contain;
+}
+
+.user-list__article {
+    @media(max-width: 767px) {
+        font-size: 22px;
+    }
+}
+
+.darken {
+    opacity: 0.4;
+}
+
+.sound-block {
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    top: 50%;
+    position: absolute;
+    right: 20px;
+    transform: translateY(-50%);
+    @media(min-width: 768px){
+        transform: translateY(-16%);
+    }
+
+    span {
+        display: inline-block;
+        margin-right: 20px;
+        @media(max-width: 767px){
+            display: none;
+        }
+    }
+}
+
+.sound-block__btn {
+    width: 48px;
+    height: 38px;
+    background: url("../img/sound-icon.png") no-repeat center;
+    position: relative;
+}
+
+.sound-block__btn.off:after {
+    content: '';
+    position: absolute;
+    left: 22px;
+    top: -5px;
+    width: 5px;
+    height: 130%;
+    background: #BFBFBF;
+    transform: rotate(-40deg);
 }

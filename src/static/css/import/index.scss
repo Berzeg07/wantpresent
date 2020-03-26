@@ -3,7 +3,6 @@
     width: 100%;
     min-height: 100%;
     margin: 0 auto;
-    padding: 0 15px;
     position: relative;
 }
 
@@ -146,15 +145,18 @@
 }
 
 .block-top {
-    position: absolute;
-    padding: 54px 20px 30px 115px;
-    top: 0;
-    left: 0;
-    width: 100%;
+    padding: 20px 20px 20px 65px;
     color: white;
     font-size: 34px;
-    @media(max-width: 1279px) {
-        padding: 20px 20px 20px 100px;
+    position: relative;
+    @media(min-width: 768px) {
+        padding: 54px 20px 30px 115px;
+    }
+}
+
+.block-top__title {
+    @media(max-width: 767px) {
+        font-size: 20px;
     }
 }
 
@@ -164,23 +166,28 @@
 
 .block-top__link {
     position: absolute;
-    left: 30px;
-    top: 65px;
-    width: 40px;
-    height: 37px;
+    left: 10px;
+    top: 20px;
+    width: 30px;
+    height: 27px;
     display: inline-block;
     background: url("../img/arrow.png") no-repeat center;
-    @media(max-width: 1279px) {
-        top: 30px;
+    background-size: contain;
+    opacity: 0.5;
+    @media(min-width: 768px) {
+        width: 40px;
+        height: 37px;
+        left: 30px;
+        top: 65px;
     }
 }
 
 .main-logo_contact {
     max-width: 310px;
     margin: 0 auto;
-    padding: 120px 0 129px;
+    padding: 80px 0 60px;
     @media(min-width: 1280px) {
-        padding: 200px 0 120px;
+        padding: 100px 0 120px;
     }
 }
 
@@ -355,7 +362,7 @@
 
 .main-title_search {
     text-transform: uppercase;
-    @media(max-width: 767px){
+    @media(max-width: 767px) {
         font-size: 28px;
     }
 }
@@ -368,11 +375,13 @@
     max-width: 670px;
     width: 100%;
     margin: 0 auto;
-    label{
+
+    label {
         display: inline-block;
         position: relative;
         width: 100%;
-        &:after{
+
+        &:after {
             content: '';
             position: absolute;
             left: 0;
@@ -381,7 +390,7 @@
             width: 40px;
             height: 40px;
             opacity: 0.5;
-            @media(max-width: 767px){
+            @media(max-width: 767px) {
                 width: 30px;
                 height: 30px;
             }
@@ -398,7 +407,7 @@
     padding-left: 70px;
     height: 75px;
     border-bottom: 1px solid rgba(255,255,255,0.2);
-    @media(max-width: 767px){
+    @media(max-width: 767px) {
         font-size: 20px;
         padding-left: 50px;
         height: 60px;
@@ -420,29 +429,27 @@
 .inp_gender:after {
     background: url("../img/gender.png") no-repeat left center;
     background-size: contain;
-
 }
 
 .inp_date:after {
     background: url("../img/present-icon.png") no-repeat left center;
     background-size: contain;
-
 }
 
 .form-inp__article {
     padding: 15px 0;
     text-align: center;
-    @media(max-width: 991px){
+    @media(max-width: 991px) {
         font-size: 22px;
     }
 }
 
-.form-inp__btn-block{
+.form-inp__btn-block {
     text-align: center;
     padding-bottom: 50px;
 }
 
-.form-btn{
+.form-btn {
     width: 296px;
     height: 110px;
     text-transform: uppercase;
@@ -451,12 +458,99 @@
     background: #8b0000;
     display: inline-block;
     transition: 0.5s;
-    &:hover{
+
+    &:hover {
         background: #690E0E;
     }
-    @media(max-width: 767px){
+    @media(max-width: 767px) {
         width: 240px;
         height: 50px;
         font-size: 22px;
+    }
+}
+
+.bg-result {
+    background: url("../img/bg-res.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.search-res {
+    max-width: 670px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 25px 10px 70px;
+    @media(min-width: 992px) {
+        padding-top: 88px;
+    }
+}
+
+.search-res__title {
+    text-transform: uppercase;
+    font-size: 22px;
+    margin-bottom: 25px;
+    @media(min-width: 992px) {
+        margin-bottom: 35px;
+    }
+}
+
+.user-list {
+    li {
+        margin-bottom: 20px;
+        background: rgba(255,255,255,0.2);
+        padding: 30px;
+        @media(max-width: 767px) {
+            padding: 15px;
+        }
+    }
+}
+
+.user-list__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+    @media(max-width: 767px) {
+        margin-bottom: 25px;
+    }
+}
+
+.user-list__img {
+    width: 50px;
+    height: 51px;
+    border-radius: 10em;
+    overflow: hidden;
+}
+
+.user-list__name {
+    line-height: 25px;
+    display: inline-block;
+    @media(max-width: 767px) {
+        font-size: 22px;
+    }
+}
+
+.user-list__date {
+    display: inline-block;
+    position: relative;
+    padding-left: 65px;
+    @media(max-width: 767px) {
+        font-size: 22px;
+        padding-left: 35px;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 42px;
+        height: 42px;
+        background: url("../img/present-icon.png") no-repeat center;
+        background-size: contain;
+        opacity: 0.5;
+        @media(max-width: 767px) {
+            width: 25px;
+            height: 25px;
+        }
     }
 }

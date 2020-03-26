@@ -450,6 +450,7 @@
 }
 
 .btn {
+    background: #8b0000;
     transition: 0.5s;
 
     &:hover {
@@ -621,14 +622,14 @@
     span {
         font-family: "LucidaGrande";
         font-size: 49px;
-        @media(max-width: 991px){
+        @media(max-width: 991px) {
             font-size: 20px;
         }
     }
 
     p {
         font-size: 22px;
-        @media(max-width: 991px){
+        @media(max-width: 991px) {
             font-size: 18px;
         }
     }
@@ -638,7 +639,7 @@
     background: rgba(255,255,255,0.2);
     padding: 15px 15px 20px 150px;
     position: relative;
-    @media(max-width: 599px){
+    @media(max-width: 599px) {
         padding: 20px 20px 20px 80px;
     }
 
@@ -653,7 +654,7 @@
         background: url("../img/grey-present.png") no-repeat center;
         opacity: 0.3;
         background-size: contain;
-        @media(max-width: 599px){
+        @media(max-width: 599px) {
             width: 40px;
             height: 40px;
             left: 20px;
@@ -664,11 +665,11 @@
         display: inline-block;
         font-size: 49px;
         line-height: 60px;
-        @media(max-width: 599px){
+        @media(max-width: 599px) {
             font-size: 20px;
             line-height: 30px;
         }
-        @media(min-width: 600px) and (max-width: 767px){
+        @media(min-width: 600px) and (max-width: 767px) {
             font-size: 28px;
             line-height: 30px;
         }
@@ -679,19 +680,56 @@
     display: inline-block;
     width: 100%;
     text-align: center;
-    background: #8b0000;
     text-transform: uppercase;
     padding: 31px 0;
-    @media(max-width: 767px){
+    @media(max-width: 767px) {
         font-size: 22px;
-        padding: 15px 0px;
+        padding: 15px 0;
     }
 }
 
-.profile-block__article{
+.profile-block__article {
     text-align: center;
     padding-top: 17px;
-    @media(max-width: 767px){
+    @media(max-width: 767px) {
         font-size: 22px;
+    }
+}
+
+.payment-status{
+    position: absolute;
+    max-width: 670px;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding: 0 15px;
+}
+
+.payment-status__icon{
+    text-align: center;
+    padding: 57px 0px 127px;
+    @media(max-width: 767px){
+        padding: 57px 0px 70px;
+
+    }
+}
+
+.payment-status__title{
+    font-size: 49px;
+    @media(max-width: 767px){
+        font-size: 28px;
+    }
+}
+
+.payment-status__btn{
+    display: inline-block;
+    width: 100%;
+    font-size: 49px;
+    padding: 15px 0px;
+
+    @media(max-width: 767px){
+        font-size: 28px;
     }
 }

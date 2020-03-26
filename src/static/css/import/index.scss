@@ -696,7 +696,7 @@
     }
 }
 
-.payment-status{
+.payment-status {
     position: absolute;
     max-width: 670px;
     width: 100%;
@@ -707,29 +707,93 @@
     padding: 0 15px;
 }
 
-.payment-status__icon{
+.payment-status__icon {
     text-align: center;
-    padding: 57px 0px 127px;
-    @media(max-width: 767px){
-        padding: 57px 0px 70px;
-
+    padding: 57px 0 127px;
+    @media(max-width: 767px) {
+        padding: 57px 0 70px;
     }
 }
 
-.payment-status__title{
+.payment-status__title {
     font-size: 49px;
-    @media(max-width: 767px){
+    @media(max-width: 767px) {
         font-size: 28px;
     }
 }
 
-.payment-status__btn{
+.payment-status__btn {
     display: inline-block;
     width: 100%;
     font-size: 49px;
-    padding: 15px 0px;
-
-    @media(max-width: 767px){
+    padding: 15px 0;
+    @media(max-width: 767px) {
         font-size: 28px;
     }
+}
+
+.auth-block__title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.auth-block__article {
+    text-align: center;
+    font-size: 17px;
+    opacity: 0.7;
+    line-height: 20px;
+}
+
+.auth-block__form {
+    width: 267px;
+}
+
+.auth-block__btn {
+    width: 100%;
+    font-size: 19px;
+    color: white;
+    padding: 10px 0;
+    margin-top: 26px;
+}
+
+.auth-block__inp {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+
+    input {
+        padding-left: 0;
+        @media(max-width: 767px) {
+            padding-left: 50px;
+        }
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        left: -50px;
+        top: 13px;
+        width: 36px;
+        height: 40px;
+        @media(max-width: 767px) {
+            top: 10px;
+            left: 0;
+        }
+    }
+}
+
+.auth-block__inp_tel:after {
+    background: url("../img/phone-icon.png") no-repeat center;
+}
+
+.auth-block__inp_sms:after {
+    background: url("../img/sms-icon.png") no-repeat center;
+}
+
+.auth-block {
+    margin-bottom: 150px;
+}
+
+.main-logo_auth {
+    margin-bottom: 79px;
 }

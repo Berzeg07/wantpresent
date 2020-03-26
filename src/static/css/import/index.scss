@@ -797,3 +797,30 @@
 .main-logo_auth {
     margin-bottom: 79px;
 }
+
+.bg-about{
+    background: url('../img/bg-about.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.about-us{
+    max-width: 1232px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    padding-bottom: 80px;
+    p{
+        margin-bottom: 35px;
+        @media(max-width: 767px){
+            margin-bottom: 25px;
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+}
+
+.main-logo_about{
+    @media(min-width: 1280px){
+        padding: 60px 0px 70px;
+    }
+}

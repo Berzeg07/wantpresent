@@ -368,6 +368,25 @@
     max-width: 670px;
     width: 100%;
     margin: 0 auto;
+    label{
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        &:after{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40px;
+            height: 40px;
+            opacity: 0.5;
+            @media(max-width: 767px){
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
 }
 
 .inp {
@@ -379,24 +398,35 @@
     padding-left: 70px;
     height: 75px;
     border-bottom: 1px solid rgba(255,255,255,0.2);
+    @media(max-width: 767px){
+        font-size: 20px;
+        padding-left: 50px;
+        height: 60px;
+    }
 }
 
-.inp_phone {
+.inp_phone:after {
     background: url("../img/phone-icon.png") no-repeat left center;
+    background-size: contain;
 }
 
-.inp_name,
-.inp_patronymic,
-.inp_surname {
+.inp_name:after,
+.inp_patronymic:after,
+.inp_surname:after {
     background: url("../img/man-icon.png") no-repeat left center;
+    background-size: contain;
 }
 
-.inp_gender {
+.inp_gender:after {
     background: url("../img/gender.png") no-repeat left center;
+    background-size: contain;
+
 }
 
-.inp_date {
+.inp_date:after {
     background: url("../img/present-icon.png") no-repeat left center;
+    background-size: contain;
+
 }
 
 .form-inp__article {

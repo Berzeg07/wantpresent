@@ -3,4 +3,10 @@ $(document).ready(function(){
         $(this).parents('li').remove();
     });
     $(".inp_phone").mask("+7(999)999-99-99");
+    $('.profile-remove').click(function(){
+        $('.modal-profile').fadeIn();
+        $('.close-modal').click(function(){
+            $('.modal-profile').fadeOut();
+        });
+    });
 });

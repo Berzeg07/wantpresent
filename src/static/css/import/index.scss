@@ -431,6 +431,17 @@
     background-size: contain;
 }
 
+.inp_access:after {
+    background: url("../img/check-green.png") no-repeat left center;
+    background-size: contain;
+    opacity: 1;
+}
+
+.inp_place:after {
+    background: url("../img/loc-icon.png") no-repeat left center;
+    background-size: contain;
+}
+
 .inp_gender:after {
     background: url("../img/gender.png") no-repeat left center;
     background-size: contain;
@@ -438,6 +449,11 @@
 
 .inp_date:after {
     background: url("../img/present-icon.png") no-repeat left center;
+    background-size: contain;
+}
+
+.inp_expect:after {
+    background: url("../img/check-icon.png") no-repeat left center;
     background-size: contain;
 }
 
@@ -889,7 +905,7 @@
 
 .add-present__article {
     opacity: 0.5;
-    @media(max-width: 767px){
+    @media(max-width: 767px) {
         font-size: 24px;
     }
 }
@@ -899,6 +915,9 @@
     @media(max-width: 767px) {
         line-height: 50px;
         font-size: 35px;
+    }
+    @media(max-width: 1599px) {
+        margin-bottom: 26px;
     }
 }
 
@@ -941,4 +960,258 @@
 
 .inp_link {
     background: url("../img/link-icon.png") no-repeat left center;
+}
+
+.bg-user-profile {
+    background: url("../img/bg-my-profile.jpg") no-repeat center;
+}
+
+.profile-title {
+    text-align: center;
+    font-size: 28px;
+}
+
+.bg-user-profile {
+    .block-top {
+        padding-left: 0;
+    }
+}
+
+.user-profile {
+    max-width: 670px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px 100px;
+}
+
+.user-profile__img {
+    width: 318px;
+    height: 318px;
+    border-radius: 10em;
+    border: 2px solid #979797;
+    overflow: hidden;
+    margin: 0 auto;
+    background: url("../img/image-add-icon.png") no-repeat center;
+    @media(max-width: 767px) {
+        width: 260px;
+        height: 260px;
+    }
+}
+
+.user-profile__add-photo {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 28px;
+    opacity: 0.5;
+}
+
+.inp_phone-accept {
+    &:before {
+        content: '';
+        position: absolute;
+        width: 48px;
+        height: 54px;
+        background: url("../img/accept-icon.png") no-repeat center;
+        right: 25px;
+        top: 22px;
+        background-size: contain;
+        @media(max-width: 767px) {
+            top: 10px;
+            right: 10px;
+            width: 38px;
+            height: 44px;
+        }
+    }
+}
+
+.form-inp_profile {
+    position: relative;
+
+    .inp {
+        @media(min-width: 768px) {
+            height: 100px;
+        }
+    }
+}
+
+.form-inp_icon {
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 36px;
+        height: 36px;
+        background: url("../img/pen-white.png") no-repeat center;
+        background-size: contain;
+        @media(max-width: 767px) {
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
+
+.add-pass-btn,
+.user-profile__btn {
+    cursor: pointer;
+    max-width: 340px;
+    display: inline-block;
+    width: 100%;
+    font-size: 26px;
+    border-radius: 30px;
+    padding: 4px;
+    margin-top: 25px;
+    color: white;
+    @media(max-width: 767px) {
+        font-size: 22px;
+    }
+}
+
+.user-profile__btn {
+    max-width: 100%;
+    position: relative;
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: -55px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: url("../img/check-icon.png") no-repeat center;
+        width: 34px;
+        height: 41px;
+    }
+}
+
+.inp_expect {
+    input {
+        opacity: 0.5;
+        font-size: 28px;
+        @media(max-width: 767px) {
+            font-size: 15px;
+        }
+    }
+}
+
+.profile-remove {
+    width: 26px;
+    height: 26px;
+    background: url("../img/basket-white.png") no-repeat center;
+    background-size: contain;
+    margin-right: 20px;
+}
+
+.profile-views {
+    font-size: 16px;
+    position: relative;
+    margin-left: 22px;
+    margin-right: 81px;
+    padding-right: 35px;
+
+    &:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 27px;
+        height: 18px;
+        background: url("../img/view-icon.png") no-repeat center;
+    }
+}
+
+.notifications {
+    display: inline-block;
+    width: 40px;
+    height: 48px;
+    background: url("../img/notis.png") no-repeat center;
+    position: relative;
+}
+
+.notifications.is-active {
+    &:after {
+        content: '';
+        position: absolute;
+        top: -5px;
+        right: -14px;
+        width: 20px;
+        height: 20px;
+        border-radius: 10em;
+        background: #e02020;
+    }
+}
+
+.profile-accsess {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media(max-width: 767px) {
+        padding-top: 60px;
+        position: relative;
+
+        .profile-title {
+            position: absolute;
+            top: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+        }
+    }
+    @media(min-width: 768px) {
+        padding-left: 120px;
+    }
+}
+
+.modal-profile {
+    position: fixed;
+    max-width: 413px;
+    width: 100%;
+    background: #101010;
+    color: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 74px 46px;
+    text-align: center;
+    display: none;
+    @media(max-width: 767px){
+        padding: 25px 10px;
+        max-width: 280px;
+    }
+    p{
+        font-size: 30px;
+        @media(max-width: 767px){
+            font-size: 24px;
+        }
+    }
+    span{
+        font-size: 19px;
+        @media(max-width: 767px){
+            font-size: 14px;
+        }
+    }
+}
+
+.modal-profile__btn-list {
+    padding-top: 30px;
+    text-align: center;
+
+    li {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.modal-profile__btn {
+    width: 246px;
+    height: 40px;
+    color: white;
+    font-size: 19px;
+    text-transform: uppercase;
+}
+
+.close-modal{
+    text-transform: none;
+    color: #979797;
 }

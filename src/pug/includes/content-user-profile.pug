@@ -1,0 +1,33 @@
+.container.bg-user-profile
+    .block-top
+        a(href="#").block-top__link
+        .profile-title Мой профиль
+
+    form(action="#" method="post").user-profile.user-profile_icon
+        p.user-profile__add-photo Добавить фото
+        .user-profile__img
+            //- Тестовая картинка, если загружено фото
+            //- img(src="img/profile-img.jpg" width="318" height="318")
+            .add-image
+                input(type="file")#addFile.inp-file
+                label(for="addFile").add-img-btn
+        
+        .form-inp.form-inp_profile.form-inp_icon
+            label.inp_name 
+                input(type="text" placeholder="ФИО").inp
+            label.inp_date
+                input(type="date" placeholder="Дата рождения").inp
+            label.inp_place
+                input(type="text" placeholder="Место рождения").inp
+            label.inp_phone.inp_phone-accept
+                input(type="text" value="+7(999)999-99-99" disabled).inp
+
+            p.form-inp__article Пройдите процедуру подтверждения аккаунта
+            .form-inp__btn-block
+                .add-passport
+                    input(type="file")#addPass.inp-file
+                    label(for="addPass").add-pass-btn.btn Загрузить фото паспорта
+            
+            button(type="submit").btn.user-profile__btn Подтвердить аккаунт
+        
+         

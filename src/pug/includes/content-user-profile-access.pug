@@ -1,0 +1,41 @@
+.container.bg-user-profile
+    .block-top
+        a(href="#").block-top__link
+        .profile-accsess
+            button(type="button").profile-remove
+            .profile-title Мой профиль
+            .profile-views 1683
+            a(href="#").notifications.is-active
+
+    form(action="#" method="post").user-profile.user-profile_icon
+        p.user-profile__add-photo Изменить фото
+        .user-profile__img
+            //- Тестовая картинка, если загружено фото
+            //- img(src="img/profile-img.jpg" width="318" height="318")
+            .add-image
+                input(type="file")#addFile.inp-file
+                label(for="addFile").add-img-btn
+        
+        .form-inp.form-inp_profile
+            label.inp_name 
+                input(type="text" placeholder="ФИО").inp
+            label.inp_date
+                input(type="date" placeholder="Дата рождения").inp
+            label.inp_place
+                input(type="text" placeholder="Место рождения").inp
+            label.inp_phone.inp_phone-accept
+                input(type="text" value="+7(999)999-99-99" disabled).inp
+            label.inp_access
+                input(type="text" value="Аккаунт подтверждён" disabled).inp
+    
+    form.modal-profile(action="#" method="post")
+        p Вы точно хотите <br>удалить свой профиль?
+        span Это действие не возможно отменить!
+        
+        ul.modal-profile__btn-list
+            li
+                button(type="submit").modal-profile__btn.btn Подтверждаю
+            li
+                button(type="button").modal-profile__btn.btn.close-modal Отменить
+        
+         

@@ -1265,14 +1265,14 @@
     position: absolute;
     right: 20px;
     transform: translateY(-50%);
-    @media(min-width: 768px){
+    @media(min-width: 768px) {
         transform: translateY(-16%);
     }
 
     span {
         display: inline-block;
         margin-right: 20px;
-        @media(max-width: 767px){
+        @media(max-width: 767px) {
             display: none;
         }
     }
@@ -1294,4 +1294,94 @@
     height: 130%;
     background: #BFBFBF;
     transform: rotate(-40deg);
+}
+
+.bg-invite {
+    background: url("../img/bg-invite.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.search-form {
+    max-width: 456px;
+    width: 100%;
+
+    input {
+        width: 100%;
+        border-radius: 10em;
+        height: 48px;
+        color: white;
+        font-size: 28px;
+        border: none;
+        padding-left: 60px;
+        padding-right: 15px;
+        background: #3F3F3F url("../img/magn-icon.png") no-repeat left 15px center;
+        @media(max-width: 767px){
+            font-size: 18px;
+        }
+    }
+}
+
+.invite-title {
+    max-width: 590px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 100px 15px 0px;
+    margin-bottom: 50px;
+    @media(max-width: 767px){
+        font-size: 20px;
+        padding: 50px 15px 0px;
+    }
+
+    img {
+        position: relative;
+        top: 12px;
+        padding: 0 10px;
+        @media(max-width: 767px){
+            max-width: 50px;
+            top: 8px;
+        }
+    }
+}
+
+.block-top__link_inv{
+    @media(max-width: 767px){
+        top: 35px;
+    }
+}
+
+.invite-list{
+    max-width: 740px;
+    width: 100%;
+    margin: 0 auto;
+
+    padding: 0px 15px 100px;
+    li{
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0px;
+        &:first-child{
+            border-top: 1px solid rgba(255,255,255,0.2);
+        }
+    }
+}
+
+.invite-list__name{
+    @media(max-width: 767px){
+        font-size: 20px;
+    }
+}
+
+.invite-list__link{
+    max-width: 48px;
+    @media(max-width: 767px){
+        max-width: 30px;
+    }
+}
+
+.invite-list__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

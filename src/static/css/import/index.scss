@@ -308,6 +308,12 @@
     }
 }
 
+.add-present__top {
+    .present-list__img {
+        background-position: center;
+    }
+}
+
 .tooltip__link {
     display: inline-block;
     width: 23px;
@@ -346,7 +352,6 @@
 .add-image {
     width: 100%;
     height: 100%;
-    background: rgba(255,255,255,0.5) url("../img/image-add-icon.png") no-repeat center top 25px;
 }
 
 .inp-file {
@@ -830,7 +835,7 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 80px;
-    @media(max-width: 767px){
+    @media(max-width: 767px) {
         flex-direction: column;
     }
 }
@@ -841,13 +846,13 @@
     border-radius: 10em;
     overflow: hidden;
     margin-right: 79px;
-    @media(max-width: 767px){
+    @media(max-width: 767px) {
         margin-right: 0;
         margin-bottom: 25px;
     }
 }
 
-.no-link{
+.no-link {
     background: #774646;
     color: #BCBCBC;
 }
@@ -856,9 +861,10 @@
     p {
         line-height: 45px;
         text-transform: uppercase;
+
         &:first-child {
             font-size: 68px;
-            @media(max-width: 767px){
+            @media(max-width: 767px) {
                 font-size: 48px;
                 text-align: center;
             }
@@ -866,10 +872,73 @@
 
         &:last-child {
             font-size: 25px;
-            @media(max-width: 767px){
+            @media(max-width: 767px) {
                 font-size: 17px;
                 text-align: center;
             }
         }
     }
+}
+
+.add-present {
+    max-width: 680px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px 50px;
+}
+
+.add-present__article {
+    opacity: 0.5;
+    @media(max-width: 767px){
+        font-size: 24px;
+    }
+}
+
+.main-title_present {
+    padding-top: 50px;
+    @media(max-width: 767px) {
+        line-height: 50px;
+        font-size: 35px;
+    }
+}
+
+.add-present__top {
+    text-align: center;
+    margin-bottom: 25px;
+    @media(min-width: 768px) {
+        display: flex;
+        align-items: center;
+
+        .add-image {
+            width: 313px;
+            height: 200px;
+        }
+    }
+
+    .present-list__img {
+        margin: 0 auto 20px;
+    }
+}
+
+.add-present__btn-wrap {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.add-present__btn {
+    max-width: 600px;
+    width: 100%;
+    border-radius: 20px;
+    text-transform: uppercase;
+    height: 50px;
+    color: white;
+    font-size: 28px;
+}
+
+.inp_present-name {
+    background: url("../img/present-img.png") no-repeat left center;
+}
+
+.inp_link {
+    background: url("../img/link-icon.png") no-repeat left center;
 }
